@@ -1,6 +1,6 @@
 # How AI Sees: the nice version
 
-**▶ Open the website: https://choudamon8888-cloud.github.io/theniceversion/**
+**Open the website: https://choudamon8888-cloud.github.io/theniceversion/**
 
 Works in Chrome. The webcam needs the secure (https) address above.
 

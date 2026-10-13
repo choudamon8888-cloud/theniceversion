@@ -29,7 +29,7 @@ export function render(root, { levelId }) {
     h('ol', { class: 'steps-n' }, level.steps.map((s) => h('li', null, s))),
     level.idea ? h('div', { class: 'callout' }, h('b', null, icon('brain'), ' Big idea'), level.idea) : null,
     h('div', { class: 'callout' }, h('b', null, icon('bulb'), ' Think about it'), level.think),
-    h('p', { class: 'small', style: { 'margin-top': '16px', 'margin-bottom': '0' } }, '🃏 You need: ', level.cards, '. ',
+    h('p', { class: 'small', style: { 'margin-top': '16px', 'margin-bottom': '0' } }, icon('cards'), ' You need: ', level.cards, '. ',
       h('a', { href: 'printables/cards.html', target: '_blank', rel: 'noopener' }, 'Print the cards (opens a new tab)')),
   );
 

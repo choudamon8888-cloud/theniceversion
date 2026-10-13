@@ -77,7 +77,7 @@ export function render(root) {
         h('div', { class: 'eyebrow' }, 'AI Literacy Challenge · Ages 9–12'),
         h('h1', { tabindex: '-1' }, 'Teach a computer to see.', h('br'), h('span', { class: 'grad' }, 'Then try to fool it.')),
         h('p', { class: 'lead' }, 'Computers can look at pictures and guess what they are. But a computer only knows what it has been shown. Teach it with your webcam, then find out how easily it gets confused. When its examples are too few or too much alike, it makes mistakes and can be unfair. That is called bias.'),
-        h('div', { class: 'cta-row' }, h('a', { class: 'btn btn-big', href: '#/teach' }, 'Start ▸'), h('a', { href: '#how' }, 'See how it works ›')),
+        h('div', { class: 'cta-row' }, h('a', { class: 'btn btn-big', href: '#/teach' }, ['Start ', icon('arrow-right')]), h('a', { href: '#how' }, ['See how it works ', icon('arrow-right')])),
       ),
       stage,
     ),
@@ -115,7 +115,7 @@ export function render(root) {
     h('section', { class: 'block center' },
       h('div', { class: 'wrap' },
         h('h2', null, 'Ready to be a', h('br'), h('span', { class: 'grad' }, 'computer detective?')),
-        h('div', { class: 'cta-row' }, h('a', { class: 'btn btn-big', href: '#/teach' }, 'Start ▸')),
+        h('div', { class: 'cta-row' }, h('a', { class: 'btn btn-big', href: '#/teach' }, ['Start ', icon('arrow-right')])),
       ),
     ),
   );

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How AI Sees</title>
+  <meta name="description" content="A hands-on AI literacy challenge for kids aged 9 to 12. Teach a computer with a webcam, then try to fool it.">
+  <!-- Privacy lock: the browser itself refuses to send data anywhere except this site's own files. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self' blob:; connect-src 'self'; font-src 'self'; base-uri 'self'; form-action 'none'; frame-src 'none'; object-src 'none'">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-mode="beginner">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="top">
+    <a class="logo" href="#/home"><i aria-hidden="true"><span data-icon="eye"></span></i> How AI Sees</a>
+    <nav id="progress" class="steps-nav" aria-label="Your progress"></nav>
+    <div class="seg" role="group" aria-label="Mode">
+      <button type="button" data-mode="beginner" aria-pressed="true"><span data-icon="plant"></span> Beginner</button>
+      <button type="button" data-mode="explorer" aria-pressed="false"><span data-icon="microscope"></span> Explorer</button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <p><span data-icon="lock"></span> Your camera pictures never leave this computer. Nothing is uploaded or saved.</p>
+    <p class="footer-links">
+      <a href="#/educator"><span data-icon="school"></span> For educators</a>
+      <button id="start-over" class="btn btn-small btn-ghost" type="button"><span data-icon="refresh"></span> Start over</button>
+    </p>
+    <p class="small">Content licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Made for the Glocal Foundation of Canada AI Literacy Challenge.</p>
+  </footer>
+
+  <div id="announcer" class="sr-only" aria-live="polite"></div>
+
+  <noscript><p class="notice">This page needs JavaScript to teach the computer. Please turn it on in your browser.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

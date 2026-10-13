@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facilitator Guide — How AI Sees</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'self'; form-action 'none'">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/sheets.css">
+</head>
+<body>
+  <main class="sheet-page guide" id="main">
+    <p class="no-print"><a href="../index.html#/educator">← Back to How AI Sees</a> · <a href="#" id="print"><span data-icon="printer"></span> Print this guide</a></p>
+    <h1><span data-icon="book"></span> Facilitator Guide: How AI Sees</h1>
+    <p><strong>For:</strong> learners aged 9–12 · <strong>Time:</strong> 60–75 minutes · <strong>Group:</strong> pairs, up to about 12 learners · <strong>Needs:</strong> a laptop with Chrome and a webcam for each pair.</p>
+
+    <h2>The big idea</h2>
+    <p>A computer that sorts pictures only knows the examples it was shown. If those examples are narrow (one light, one angle, one plain background), it makes mistakes on anything else. When real people are left out of the examples, those mistakes become <em>bias</em>. Learners discover this by trying to break their own classifier.</p>
+    <p><strong>Learners will be able to:</strong> (1) explain that AI learns from examples; (2) predict and test when it will fail; (3) say why more varied examples help; (4) give a real-life example of bias.</p>
+
+    <h2>Before the workshop</h2>
+    <ol>
+      <li><strong>Print the cards in colour</strong> (<a href="cards.html">Picture cards</a>): one set per pair. Cut along the dashed lines. Print the Busy Background sheet too.</li>
+      <li><strong>Open the site once on every laptop</strong> and visit the Teach Station. The AI files (about 15 MB) download the first time and are then kept by the browser, so 12 learners do not all download at once.</li>
+      <li>Click <strong>Allow</strong> when Chrome asks about the camera. Plug in USB webcams and check they appear in the Webcam list.</li>
+      <li>Press <strong>Start over</strong> (bottom of any page) on every laptop, so the last group’s journal is erased.</li>
+      <li>Optional: print the <a href="challenges.html">Challenge cards</a> for learners who like writing on paper.</li>
+    </ol>
+
+    <h2>Suggested timing</h2>
+    <table>
+      <tr><th>Time</th><th>What happens</th></tr>
+      <tr><td>0–10 min</td><td>Home page. Read the mission and the six words aloud. Ask: “How do <em>you</em> know that is a cat?”</td></tr>
+      <tr><td>10–20 min</td><td><strong>Teach.</strong> Pairs record 30 pictures of each card. <em>Tell them to hold the card straight, in normal light, on a plain background.</em> This is on purpose: it makes the training narrow so Levels 1–3 work.</td></tr>
+      <tr><td>20–50 min</td><td><strong>Levels 1–4.</strong> About 7 minutes each. Learners try to fool the computer, then write in the journal.</td></tr>
+      <tr><td>50–65 min</td><td><strong>Fix it.</strong> Pairs return to Teach, add varied pictures (use the Sun 3 and Fish 3 cards), and re-test. Does it improve?</td></tr>
+      <tr><td>65–75 min</td><td><strong>Reflect.</strong> Print journals. Group talk about bias.</td></tr>
+    </table>
+
+    <h2>Talking points for each level</h2>
+    <ul>
+      <li><strong>Lighting:</strong> “The computer never saw a dark card. It guesses from what it knows.”</li>
+      <li><strong>Angles:</strong> “We see a tilted card as the same card. The computer has to be taught that.”</li>
+      <li><strong>Clutter:</strong> “It cannot tell which part of the picture matters. It may be using the background.”</li>
+      <li><strong>Never Seen It:</strong> the computer must choose a class, even for a rocket. Low confidence is its way of saying “not sure”. The <em>Yellow Fish</em> and <em>Blue Sun</em> cards often fool it because it learned colour as a clue. That is a small, safe example of bias.</li>
+    </ul>
+
+    <h2>Ethics checkpoints (built into the activity)</h2>
+    <ul>
+      <li><strong>Never Seen It:</strong> an AI does not know what it does not know. It squeezes anything new into a bucket it already has. Ask: “Who might get squeezed into the wrong bucket?”</li>
+      <li><strong>Model Card (Reflect page):</strong> it counts the pictures in each class and warns if one has twice as many as another. Link this to sampling bias: whoever is missing from the examples gets the worst results.</li>
+      <li><strong>Human in the loop:</strong> the last question asks why an expert must double-check an AI before it is used in a school, car or hospital.</li>
+    </ul>
+
+    <h2>Discussion questions for the end</h2>
+    <ul>
+      <li>If you were teaching the computer again, what pictures would you collect?</li>
+      <li>Who decides which examples go into a computer’s training data?</li>
+      <li>A phone unlocks with your face. What could go wrong if it learned mostly from one kind of face?</li>
+      <li>When should a person double-check what a computer says?</li>
+    </ul>
+
+    <h2>Beginner and Explorer modes</h2>
+    <ul>
+      <li><strong>Beginner</strong> (the default): 2 cards, faces and sentences, no numbers.</li>
+      <li><strong>Explorer</strong> (button at top right): 3 cards, exact percentages and picture counts. Good for fast learners or older learners. Switching back to Beginner removes the 3rd card’s pictures.</li>
+    </ul>
+
+    <h2>Troubleshooting</h2>
+    <table>
+      <tr><th>Problem</th><th>Try this</th></tr>
+      <tr><td>Camera is black or blocked</td><td>Click the camera icon next to the address bar and choose Allow. Close other apps using the camera (Zoom, Teams). Press Try again.</td></tr>
+      <tr><td>USB webcam is not in the list</td><td>Unplug and plug it in again, then press Try again. The list updates by itself.</td></tr>
+      <tr><td>“The computer forgot”</td><td>Training lives only in memory, for privacy. Reloading the page erases it. Go back to Teach.</td></tr>
+      <tr><td>Train button will not work</td><td>Every card needs at least 10 pictures.</td></tr>
+      <tr><td>Page loads slowly</td><td>The first load downloads about 15 MB. After that it is quick.</td></tr>
+      <tr><td>Guesses never get confident</td><td>Take more pictures (30 or more) and hold the card still and centred while recording.</td></tr>
+    </table>
+
+    <h2>Privacy summary (for families and library staff)</h2>
+    <ul>
+      <li>Everything runs inside the browser. No server, login, cookies or analytics.</li>
+      <li>Webcam pictures are never saved or uploaded. Only numbers about the pictures are kept in memory.</li>
+      <li>Journal answers are saved only in that browser (localStorage). <strong>Start over</strong> erases them.</li>
+      <li>Learners should not write their full names in the journal. The printed page has a blank for a name that they write by hand.</li>
+    </ul>
+
+    <h2>Accessibility</h2>
+    <p>The whole site works with a keyboard, so a trackpad is never needed. On the Teach Station press <kbd>1</kbd>, <kbd>2</kbd> (or <kbd>3</kbd> in Explorer mode) to choose a card, then <strong>hold</strong> <kbd>Space</kbd> or <kbd>Enter</kbd> to take pictures. The page does not scroll while you hold Space. Tab also reaches every button, and focus is shown with a blue outline. Results are announced to screen readers, and the home-page demo has a pause button.</p>
+
+    <p class="small">This guide is licensed under CC BY 4.0. Credit: “How AI Sees” — Glocal Foundation of Canada AI Literacy Challenge.</p>
+  </main>
+  <script type="module" src="guide-page.js"></script>
+</body>
+</html>

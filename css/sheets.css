@@ -1,0 +1,41 @@
+/* Extra styles for the printable pages (cards, challenges, guide). Loaded after style.css. */
+
+@page { size: letter; margin: 12mm; }
+
+.sheet-page { max-width: 900px; margin: 0 auto; padding: 24px; }
+.sheet-page .toolbar { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
+
+.sheet { break-after: page; margin-bottom: 32px; }
+.sheet:last-of-type { break-after: auto; }
+.sheet h2 { font-size: 1.2rem; margin-bottom: .2em; }
+.sheet .note { margin-bottom: 12px; }
+
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, 90mm); gap: 8mm; justify-content: center; }
+.cards-grid figure { margin: 0; }
+.pcard { width: 90mm; height: 90mm; border: .4mm dashed #6b7280; background: #fff; }
+.pcard svg { display: block; width: 100%; height: 100%; }
+.cards-grid figcaption { text-align: center; font-size: .8rem; color: var(--muted); margin-top: 2mm; }
+
+.bg-sheet svg { display: block; width: 100%; height: auto; max-height: 245mm; border: .4mm dashed #6b7280; }
+
+/* Paper challenge cards */
+.challenge { border: 3px solid var(--line); border-radius: 12px; padding: 14px 18px; margin-bottom: 20px; break-inside: avoid; }
+.challenge h2 { margin: 0 0 .2em; }
+.lines p { margin: .8em 0 0; font-weight: 700; }
+.lines .line { border-bottom: 1.5px solid #6b7280; height: 1.7em; }
+
+/* Guide */
+.guide h2 { margin-top: 1.4em; }
+.guide table { border-collapse: collapse; width: 100%; margin-bottom: 1em; }
+.guide th, .guide td { border: 2px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; }
+.guide th { background: var(--soft); }
+.guide li { margin-bottom: .4em; }
+
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+@media print {
+  .sheet-page { padding: 0; max-width: none; }
+  .sheet { margin-bottom: 0; }
+  .guide { font-size: 12px; }
+  .challenge:nth-of-type(2n) { break-after: page; }
+}

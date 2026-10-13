@@ -1,5 +1,9 @@
 # How AI Sees: the nice version
 
+**▶ Open the website: https://choudamon8888-cloud.github.io/theniceversion/**
+
+Works in Chrome. The webcam needs the secure (https) address above.
+
 The Apple-style version of the project, with icon chips, ethics and accessibility features. It is a standalone site with its own code, AI files and printables.
 
 If you turn on GitHub Pages for the repo, it lives at `https://choudamon8888-cloud.github.io/theniceversion/`.
